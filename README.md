@@ -74,3 +74,14 @@ We don't automatically close the staged artifacts so after checking that the fil
  - Learning Tools Interoperability Core Specification - https://www.imsglobal.org/spec/lti/v1p3
  - 1 EdTech Security Framework - https://www.imsglobal.org/spec/lti/v1p3
  - OpenID Connect Core - https://openid.net/specs/openid-connect-core-1_0.html
+
+# Note
+This is a fork of spring-security-lti13 for internal use at UVA until such time as the original project is updated to support Spring 7.  
+The original project is available at https://github.com/oxctl/spring-security-lti13  
+The fork is available at https://github.com/henriknik/spring-security-lti13/tree/spring-7-upgrade  
+The PR for the upgrade is https://github.com/oxctl/spring-security-lti13/pull/60  
+
+## Modifications
+The following files were modified from upstream for internal UVA use:
+- pom.xml: updated Maven coordinates and repository references from oxctl to stacs/edu.virginia.its.lts
+- .github/workflows/*.yml: CI configuration adjusted for internal build pipeline

@@ -1,0 +1,8 @@
+name: Build
+
+on: [push]
+
+jobs:
+  build:
+    uses: stacs/actions/.github/workflows/maven-deploy.yaml@v3
+    secrets: inherit
